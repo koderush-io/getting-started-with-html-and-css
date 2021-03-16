@@ -1,0 +1,35 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #35eb90;
+}
+.container{
+    text-align: center;
+    padding-top: 15%;
+}
+h2, h1{
+    font-size: 75px;
+    animation: slide-up 3s ease-in-out;
+    /* animation: dim-in 3s ease-in-out; */
+}
+
+@keyframes dim-in {
+    0%{
+        opacity: .1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up{
+    0%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
